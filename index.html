@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abrigo Animal Joinville</title>
+    <link rel="shortcut icon" href="img/android-chrome-512x512.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
@@ -17,7 +18,7 @@
     <!--Header Start-->
     <header>
         <nav class="navbar">
-            <div class="logo"><a href="#">Image here later</a></div>
+            <div class="logo"><img src="img/logo.png" alt=""></div>
             <div class="links-button">
             <ul class="links">
                 <li><a href="#">Home</a></li>
@@ -27,13 +28,23 @@
                 <li><a href="#">Contato</a></li>
             </ul>
 
-            <a href="" class="btn">Doar</a>
+            <a href="#" class="btn">Doar</a>
         </div>
-            <div class="btn-menu">
+            <div class="btn-menu" id="btn-menu">
                 <div class="bx bx-menu " id="menu-icon"></div>
             </div>
         </nav>
+
+        <div class="dropdown-menu" id="dropdown-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Adoção</a></li>
+            <li><a href="#">Doações</a></li>
+            <li><a href="#">Sobre nós</a></li>
+            <li><a href="#">Contato</a></li>
+            <li> <a href="#" class="btn">Doar</a></li>
+        </div>
     </header>
+    <script src="script.js"></script>
 </body>
 
 </html>

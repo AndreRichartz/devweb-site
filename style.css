@@ -9,30 +9,136 @@
 }
 
 :root {
-    
+    --active-color:#f3dd15;
+    --btn-color:#f5e61d;
+    --dropdown-menu-color:rgba(221, 221, 221, 0.5);
+}
+body {
+    background-color: #fffef2;
 }
 /*Nav bar*/
 
 header {
     display: flex;
+    align-items: center;
 }
 
 .navbar {
-    padding: 1.5rem;
+    padding-right: 2rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .links {
     display: flex;
-    gap: 0.5rem;
+    gap: 0.7rem;
+    align-items: center;
+}
+
+.links-button a {
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.links li:hover, a:hover {
+   transform: scale(1.2);
+   transition: 0.5s;
+}
+
+.links li:hover, a:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+
+}
+
+.links a:hover {
+    color: var(--active-color);
 }
 
 .links-button {
     display: flex;
     gap: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
 }
 #menu-icon {
     font-size: 2rem;
+}
+
+.btn {
+    background-color: var(--btn-color);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+.btn:active {
+    transform: scale(0.9);
+}
+
+.logo img {
+    width: 10vw;
+    min-width: 7rem;
+    height: auto;
+}
+
+.navbar .btn-menu {
+    cursor: pointer;
+    display: none;
+}
+
+/*Dropdown menu*/
+
+.dropdown-menu {
+    position: absolute;
+    right: 2rem;
+    top: 120px;
+    height: 0px;
+    width: 300px;
+    background-color:var(--dropdown-menu-color);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown-menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.dropdown-menu a {
+    color: black;
+    font-weight: 600;
+}
+
+.dropdown-menu .btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+}
+
+.dropdown-menu.open {
+    height: fit-content;
+}
+/*RESPONSIVIDADE*/
+
+@media(max-width: 992px) {
+    .navbar .links,
+    .navbar .btn{
+        display: none;
+    }
+
+    .navbar .btn-menu {
+        display: block;
+    }
+    .btn {
+        width: 100rem;
+    }
 }

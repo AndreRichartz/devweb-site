@@ -1,50 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Abrigo Animal Joinville</title>
-    <link rel="shortcut icon" href="img/android-chrome-512x512.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
-        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-</head>
+      rel="shortcut icon"
+      href="img/android-chrome-512x512.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
 
-<body>
+  <body>
+    <div>
     <!--Header Start-->
     <header>
-        <nav class="navbar">
-            <div class="logo"><img src="img/logo.png" alt=""></div>
-            <div class="links-button">
-            <ul class="links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Adoção</a></li>
-                <li><a href="#">Doações</a></li>
-                <li><a href="#">Sobre nós</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-
-            <a href="#" class="btn">Doar</a>
-        </div>
-            <div class="btn-menu" id="btn-menu">
-                <div class="bx bx-menu " id="menu-icon"></div>
-            </div>
-        </nav>
-
-        <div class="dropdown-menu" id="dropdown-menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Adoção</a></li>
-            <li><a href="#">Doações</a></li>
-            <li><a href="#">Sobre nós</a></li>
+      <nav class="navbar">
+        <div class="logo"><img src="img/logo.png" alt="" /></div>
+        <div class="links-button">
+          <ul class="links">
+            <li><a href="#home-img-text">Home</a></li>
+            <li><a href="#about-us">Sobre nós</a></li>
+            <li><a href="#adoption">Adoção</a></li>
+            <li><a href="#donation">Doações</a></li>
             <li><a href="#">Contato</a></li>
-            <li> <a href="#" class="btn">Doar</a></li>
-        </div>
-    </header>
-    <script src="script.js"></script>
-</body>
+          </ul>
 
+          <a href="#" class="btn">Doar</a>
+        </div>
+        <div class="btn-menu" id="btn-menu">
+          <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+      </nav>
+
+      <div class="dropdown-menu" id="dropdown-menu">
+        <li><a href="#home-img-text">Home</a></li>
+        <li><a href="#about-us">Sobre nós</a></li>
+        <li><a href="#adoption">Adoção</a></li>
+        <li><a href="#donation">Doações</a></li>
+        <li><a href="#">Contato</a></li>
+        <li><a href="#" class="btn">Doar</a></li>
+      </div>
+    </header>
+    <!--main-->
+
+    <main>
+
+         <!--home-->
+
+      <section class="home-img-text" id="home-img-text">
+        <div class="home-title-text">
+          <h1 class="home-title">Abrigo Animal</h1>
+          <h2 class="home-text">Adote <br>seu novo melhor amigo!</h2>
+        </div>
+        <div class="home-img">
+          <img src="img/dog-home.png" alt="" />
+        </div>
+      </section>
+
+      <!--About Us-->
+
+      <section class="about-us" id="about-us">
+
+        <div class="about-img">
+            <img src="img/boyimg-transformed-removebg-preview-transformed.png" alt="">
+        </div>
+
+        <div class="about-us-title-text">
+            <span id="about-us-span">About Us</span>
+            <h2 class="about-us-title">Trabalhando para <br>criar famílias</h2>
+            <div class="about-us-text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat possimus a, commodi nulla obcaecati nostrum doloremque quiaat laboriosam delectus veniam, dolorum!</p>
+            </div>
+
+            <div class="about-btn-container"><a href="#about-us" class="about-btn">Saiba mais</a></div>
+        </div>
+
+        </section>
+
+        <section class="adoption" id="adoption">
+            <span id="adoption-span">Adoção</span>
+                <h2 class="adoption-title">Adote um amigo!</h2>
+            <div class="cards-container">
+                <div class="card1">
+                    <div class="card-img1"><img src="img/dog1.jpg" alt=""></div>
+                    <span class="dog-name">Luna</span>
+                    <span class="dog-age">16.1 meses</span>
+
+                </div>
+
+                <div class="card2">
+                    <div class="card-img1"><img src="img/dog2.jpg" alt=""></div>
+                    <span class="dog-name">André</span>
+                    <span class="dog-age">16.5 meses</span>
+                </div>
+
+                <div class="card3">
+                    <div class="card-img1"><img src="img/dog3.jpg" alt=""></div>
+                    <span class="dog-name">Yasmin</span>
+                    <span class="dog-age">15.2 meses</span>
+                </div>
+
+            </div>
+      </section>
+
+      <!-- donation -->
+      
+      <section class="donation" id="donation">
+
+        <div class="donations-container">
+
+            <div class="donate1">
+                <div class="donate-img"><img src="img/dog-food-removebg-preview.png" alt=""></div>
+
+                <div class="donate-text">
+                    <span class="donate-span">Ração</span>
+                    <h3>Ajude com alimento</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit voluptates consequuntur vel error aspernatur ratione dignissimos.</p>
+                </div>
+            </div>
+
+            <div class="donate1">
+               
+                <div class="donate-text">
+                    <span class="donate-span">Medicamento</span>
+                    <h3>Ajude com medicamentos</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit voluptates consequuntur vel error aspernatur ratione dignissimos.</p>
+                </div>
+
+                <div class="donate-img"><img src="img/dog-mo-removebg-preview.png" alt=""></div>
+            </div>
+
+            <div class="donate1">
+                <div class="donate-img"><img src="img/dog-money-removebg-preview.png" alt=""></div>
+
+                <div class="donate-text">
+                    <span class="donate-span">Dinheiro</span>
+                    <h3>Ajude com doações monetárias</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit voluptates consequuntur vel error aspernatur ratione dignissimos.</p>
+                </div>
+            </div>
+
+        </div>
+
+      </section>
+
+    </main>
+
+
+</div>
+    <script src="script.js"></script>
+  </body>
 </html>

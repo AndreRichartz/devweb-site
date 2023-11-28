@@ -36,7 +36,7 @@
             <li><a href="#">Contato</a></li>
           </ul>
 
-          <a href="#" class="btn">Doar</a>
+          <a href="#" class="btn" id="btn">Doar</a>
         </div>
         <div class="btn-menu" id="btn-menu">
           <div class="bx bx-menu" id="menu-icon"></div>
@@ -49,7 +49,7 @@
         <li><a href="#adoption">Adoção</a></li>
         <li><a href="#donation">Doações</a></li>
         <li><a href="#">Contato</a></li>
-        <li><a href="#" class="btn">Doar</a></li>
+        <li><a href="#" class="btn" id="btn1">Doar</a></li>
       </div>
     </header>
     <!--main-->
@@ -130,7 +130,7 @@
                 </div>
             </div>
 
-            <div class="donate1">
+            <div class="donate1" id="donate2">
                
                 <div class="donate-text">
                     <span class="donate-span">Medicamento</span>
@@ -138,7 +138,7 @@
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit voluptates consequuntur vel error aspernatur ratione dignissimos.</p>
                 </div>
 
-                <div class="donate-img"><img src="img/dog-mo-removebg-preview.png" alt=""></div>
+                <div class="donate-img"><img src="img/remedio-removebg-preview.png" alt=""></div>
             </div>
 
             <div class="donate1">
@@ -151,13 +151,53 @@
                 </div>
             </div>
 
-        </div>
-
+          </div>
       </section>
 
     </main>
 
 
+<!-- modal -->
+
+    <div class="modal" id="modal">
+      <div class="close-modal">
+      <div class="modal-donate-title">
+        <h3>Doação</h3>
+        <span>Lorem ipsum dolor, sit amet consectetur</span>
+      </div>
+      <div id="close-btn"><i class='bx bx-x-circle' id="close"></i></div>
+    </div>
+      <div>
+        <form class="form">
+          <fieldset>
+            <legend class="legend">Doações - formulário</legend>
+            <div>
+            <label for="name">Nome Completo:</label>
+              <input type="text" id="name" name="name" placeholder="João José">
+          </div>
+
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="joao@gamil.com">
+          </div>
+
+          <div>
+            <span>Escolha um valor:</span>
+            <div>
+              <input type="number" id="number" min="1" max="10000"  step="0.01"/> 
+            <input type="range" name="" id="value" name="valueName" min="100" max="100000">
+            <p>Valor:R$<span id="print-value"></span></p>
+          </div>
+          </div>
+
+          </fieldset>
+        </form>
+
+      </div>
+
+      <a href="#" class="btn-donate">Doar</a>
+      
+    </div>
 </div>
     <script src="script.js"></script>
   </body>

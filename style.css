@@ -25,6 +25,9 @@ body {
 header {
   display: flex;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 998;
 }
 
 .navbar {
@@ -33,6 +36,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+ 
 }
 
 .links {
@@ -367,6 +371,7 @@ input[type="range"] {
     display: inline-block;
     width: 100%;
   }
+  
 /*RESPONSIVIDADE*/
 @media (max-width: 1112px) {
   .cards-container {
@@ -521,11 +526,14 @@ input[type="range"] {
   .modal {
     width: fit-content;
     height: fit-content;
+    top: 100px;
+    width: 20rem;
   }
 
 
   fieldset {
     width: 15rem;
+    margin-bottom: 1rem;
   }
 
   .modal-donate-title h3 {
@@ -570,3 +578,4 @@ input[type="range"] {
     font-size: 1rem;
   }
 }
+

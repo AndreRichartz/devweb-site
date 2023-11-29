@@ -25,9 +25,9 @@ body {
 header {
   display: flex;
   align-items: center;
+  z-index: 998;
   position: sticky;
   top: 0;
-  z-index: 998;
 }
 
 .navbar {
@@ -394,12 +394,8 @@ input[type="range"] {
     width: 100rem;
   }
 
-  /*Dropdown menu*/
 
-  .btn-menu {
-    position: fixed;
-    right: 10px;
-  }
+  /*Dropdown menu*/
   .dropdown-menu {
     position: fixed;
     right: 2rem;
@@ -558,15 +554,6 @@ input[type="range"] {
     right: 0;
 }
 
-.btn-menu {
-    position: fixed;
-    right: 50px;
-}
-
-#menu-icon {
-    position: fixed;
-    right: 50px;
-}
 }
 
 @media (max-width: 400px) {
